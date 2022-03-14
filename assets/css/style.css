@@ -73,3 +73,8 @@ header {
   footer a {
     color: #024e76;
   }
+
+  section {
+    padding: 60px;
+    background-image: url("C:\Users\vicki\projects\run-buddy\assets\images\hero-bg.jpg");
+  }
