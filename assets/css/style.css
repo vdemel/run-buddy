@@ -225,3 +225,13 @@ section {
 .text-right {
   text-align: right;
 }
+
+/* REACH OUT STYLES START */
+.contact {
+  text-align: center;
+  background: #024e76;
+}
+
+.contact h2 {
+  color: #fce138;
+}
