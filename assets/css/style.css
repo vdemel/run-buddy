@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -232,7 +238,7 @@ section {
   justify-content: space-between;
 }
 
-.step:nth-child(even) {
+.step:not(:last-child) {
   border-bottom: 1px solid #39a6b2;
 }
 
@@ -391,6 +397,33 @@ section {
 .contact-info a {
   color: #fce138;
 }
+
+.checkbox-wrapper input, .radio-wrapper input {
+  opacity: 0;
+}
+
+.checkbox-wrapper label, .radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid #024e76;  
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.radio-wrapper label::before {
+  border-radius: 50%;
+}
+
 
 
 /* REACH OUT STYLES END */
